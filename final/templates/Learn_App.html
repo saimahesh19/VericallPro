@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FedEx Scam Detection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #333;
+            position: relative;
+        }
+        /* Ensuring logos are inside the container */
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .logo {
+            width: 80px; /* Adjusted size */
+            height: auto;
+        }
+        h1, h2 {
+            color: #d63031;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        p, li {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        ul {
+            text-align: left;
+            padding-left: 40px;
+        }
+        .cta {
+            display: inline-block;
+            background: #d63031;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #b71c1c;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?cybersecurity,technology') center/cover;
+            padding: 60px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">Protecting You from Scams with AI-Powered Detection</div>
+    
+    <div class="container">
+        <!-- Logos inside the container -->
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logoup.png') }}" alt="Left Logo" class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Right Logo" class="logo">
+        </div>
+
+        <h1>Understanding Scams & FedEx Scam Detection</h1>
+        <p>A scam is a deceptive scheme designed to trick individuals into providing sensitive information or money. Scammers employ various techniques, including impersonation, social engineering, and AI-generated fraud, to exploit victims.</p>
+        
+        <h2>How and Why Scams Are Created?</h2>
+        <p>Scammers operate to gain financial benefits, steal identities, or extract confidential data. They manipulate victims through urgency, fear tactics, and trust exploitation.</p>
+        
+        <h2>How Phone Call Scams Work?</h2>
+        <ul>
+            <li><strong>Impersonation:</strong> Scammers pose as trusted companies (banks, FedEx, government agencies).</li>
+            <li><strong>Urgency & Threats:</strong> False claims about account security issues, package delays, or legal notices.</li>
+            <li><strong>Phishing for Data:</strong> Requests for OTPs, banking details, or login credentials.</li>
+            <li><strong>Voice Phishing (Vishing):</strong> AI-generated voices convincingly mimic real representatives.</li>
+        </ul>
+        
+        <h2>What is FedEx?</h2>
+        <p>FedEx is a global courier service handling millions of packages daily. Due to its trusted reputation, scammers often exploit it to conduct fraud through fake delivery notices and payment requests.</p>
+        
+        <h2>Why Develop an Application for FedEx Scam Detection?</h2>
+        <p>FedEx-related scams are on the rise, tricking people into revealing personal data. Our application helps detect and prevent fraud by analyzing call audio, identifying scam keywords, and flagging suspicious activity.</p>
+        
+        <h2>How Our FedEx Scam Detection Works?</h2>
+        <ul>
+            <li><strong>Speech Analysis:</strong> Uses NLP to detect fraudulent call content.</li>
+            <li><strong>Voice Fingerprinting:</strong> Identifies deepfake or AI-generated voices.</li>
+            <li><strong>Spectrogram Processing:</strong> Analyzes voice spectrograms for anomalies.</li>
+            <li><strong>Real-time Alerts:</strong> Notifies users of potential scams.</li>
+        </ul>
+        
+        <p>Our AI-driven detection system helps users stay ahead of evolving scam tactics.</p>
+        <a href="/dashboard" class="cta">Back to Dashboard</a>
+    </div>
+
+</body>
+</html>
